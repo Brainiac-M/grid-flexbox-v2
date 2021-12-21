@@ -245,7 +245,8 @@ figcaption a {
 }
 
 .footer{
-    background-color: var(--color4);
+    background-color: var(--color5);
+    color: #080808;
 }
 
 footer {
