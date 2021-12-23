@@ -50,6 +50,15 @@ section h2 {
 New styles begin here and continue to the end of the page 
 ****************/
 
+
+#popart figure img {
+    object-position: 0;
+    object-fit: cover;
+}
+
+#popart figure {
+    border-color: var(--color8);
+}
 section ul {
     list-style-type: none;
     padding: 0;
@@ -336,6 +345,24 @@ footer address{
     #popular li:last-child figure img{
         object-position: 0 -300px;
     }
+
+    #popart ul{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .colspan2{
+        grid-column: span 2;
+    }
+    .colspan3{
+        grid-column: span 3;
+    }
+    .rowspan2{
+        grid-row: span 2;
+    }
+    .rowspan2 figure{
+        max-height: unset;
+    }
 }
 
 @media (min-width: 800px) {
@@ -373,5 +400,4 @@ footer address{
     #popular li:last-child figure img {
         object-position: 0;
     }
-    
 }
